@@ -145,8 +145,37 @@ switch (combustivel)
                         }
                         break;
 
+                    case 5:
+                        Console.WriteLine("Atividade 5");
 
-                }
+                        double paodequeijo = 2.00;
+                        double cafe = 1.50;
+                        double leite = 3.30;
+                        double queijo = 14.90;
+                        double bolo = 5.00;
+                        double Soma = paodequeijo + cafe + leite + queijo + bolo;
+                        double Imposto = Soma * 0.15;
+                        double Total;
+
+                        paodequeijo *= 5;
+                        cafe *= 2;
+                        leite *= 2;
+                        queijo *= 1;
+                        bolo *= 2;
+
+                        Console.WriteLine("Consumo de produto");
+                        Console.WriteLine($"Pão De Queijo {paodequeijo:C2} Reais");
+                        Console.WriteLine($"Café {cafe:C2} Reais");
+                        Console.WriteLine($"Leite {leite:C2} Reais");
+                        Console.WriteLine($"Queijo {queijo:C2} Reais");
+                        Console.WriteLine($"Bolo {bolo:C2} Reais");
+
+                        Soma = (paodequeijo + cafe + leite + queijo + bolo);
+                        Console.WriteLine($"Valor do imposto 15% {Imposto:C2} Reais");
+                        Total = (Soma + Imposto);
+                        Console.WriteLine($"Valor total: {Total:C2} Reais");
+                        break;
+}
             }
         }
     }
