@@ -119,6 +119,33 @@ switch (combustivel)
                             }
                         }
                         break;
+
+                        case 4:
+                        Console.WriteLine("Atividade 4");
+
+                        int f1;
+                        int f2;
+
+                        Console.WriteLine("Digite um número");
+                        f1 = int.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Digite outro número");
+                        f2 = int.Parse(Console.ReadLine());
+
+                        for (int i = f1; i < f2; i++)
+                        {
+                            if (i >= 10 && i <= 20)
+                            {
+                                Console.WriteLine($"In, dentro: {i}");
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Out, fora: {i}");
+                            }
+                        }
+                        break;
+
+
                 }
             }
         }
