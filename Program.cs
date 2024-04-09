@@ -175,6 +175,36 @@ switch (combustivel)
                         Total = (Soma + Imposto);
                         Console.WriteLine($"Valor total: {Total:C2} Reais");
                         break;
+
+                    case 6:
+                        Console.WriteLine("Atividade 6");
+
+                        int inicio;
+                        int termino;
+                        int duracao;
+
+                        Console.WriteLine("Informe a hora inicial da partida");
+                        inicio = int.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Informe a hora de termino da partida");
+                        termino = int.Parse(Console.ReadLine());
+
+                        if (inicio < termino)
+                        {
+                            duracao = termino - inicio;
+                            Console.WriteLine($"O tempo da partida foi de: {duracao}");
+                        }
+                        else if (inicio > termino)
+                        {
+                            duracao = 24 - inicio + termino;
+                            Console.WriteLine($"O tempo da partida foi de: {duracao}");
+                        }
+                        else
+                        {
+                            Console.WriteLine("O tempo da partida foi de: 24 horas");
+                            break;
+                        }
+                        break;
 }
             }
         }
